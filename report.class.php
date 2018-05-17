@@ -281,7 +281,6 @@
 					$finalreport = $this->filter_data_pie($g['formdata'], $finalreport);
 				}
 				// END new feature PIE Graphs.
-
 				$reportgraphs[] = $class->execute($g['id'],$g['formdata'],$finalreport);
 			}
 		}
@@ -779,7 +778,7 @@
 		$debug = (!empty($CFG->debug) && $CFG->debug >= DEBUG_DEVELOPER && $CFG->debugdisplay);
 
 		// GROUP not work with cut pie.
-		if ($settings->group) {
+		if (isset($settings->group) && $settings->group) {
 			return $finalreport;
 		}
 

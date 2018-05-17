@@ -27,6 +27,9 @@ By Tim Hunt
 
 Versions history
 
+Added support to image_url bc. pix_url was depreciated in 3.3
+Fixed some issues with current moodle versions.
+moodle@michaelpollak.org
 
 Added support for Moodle 2.7
 
